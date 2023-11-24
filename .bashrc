@@ -121,3 +121,4 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 
 [ -f "/home/jkaye/.ghcup/env" ] && source "/home/jkaye/.ghcup/env" # ghcup-env
 . "$HOME/.cargo/env"
+eval "$(direnv hook bash)"

@@ -3,10 +3,12 @@ let
   fenix = import (fetchTarball "https://github.com/nix-community/fenix/archive/main.tar.gz") { };
 in {
   inherit (pkgs)
+    direnv
     emacs29
     glibcLocalesUtf8
     libtool
+    nix-direnv
     ripgrep
   ;
-  rust = fenix.complete.toolchain;
+  rust = fenix.stable.toolchain;
 }
