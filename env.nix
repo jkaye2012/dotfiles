@@ -8,6 +8,7 @@ in {
     glibcLocalesUtf8
     libtool
     nix-direnv
+    nodejs_20
     ripgrep
   ;
   rust = fenix.stable.toolchain;
